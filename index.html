@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>MHA Explorer — Edu Wallet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- أيقونات Font Awesome للأزرار -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- 🔸 شريط الأسعار الحي -->
+  <div id="ticker">
+    <div id="tickerContent"></div>
+  </div>
+
+  <!-- 🔸 واجهة التطبيق -->
+  <div class="app">
+    <!-- اللوحة اليسرى -->
+    <div class="panel left">
+      <h1>MHA Explorer</h1>
+      <input id="search" placeholder="Search tokens..." />
+
+      <!-- قسم الأسعار الجانبي -->
+      <div id="prices">
+        <h3>Live Prices</h3>
+        <ul id="priceList"></ul>
+      </div>
+
+      <div id="tokenList"></div>
+    </div>
+
+    <!-- اللوحة اليمنى -->
+    <div class="panel right">
+      <h2>Token Details</h2>
+      <div id="detailLogo"></div>
+      <div id="detailName">—</div>
+      <div id="detailSymbol">—</div>
+      <div id="detailDesc">Select a token to see details</div>
+
+      <!-- الأزرار الاحترافية -->
+      <div class="detail-links">
+        <a id="detailWebsite" href="#" target="_blank" class="detail-btn hidden">
+          <i class="fa-solid fa-globe"></i> Website
+        </a>
+        <a id="detailExplorer" href="#" target="_blank" class="detail-btn hidden">
+          <i class="fa-solid fa-magnifying-glass"></i> Explorer
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
