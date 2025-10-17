@@ -1,33 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>MHA Explorer — Edu Wallet</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Google Site Verification -->
+  <!-- 🔸 Google Site Verification -->
   <meta name="google-site-verification" content="google22bce74211f26f9e" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="MHA Explorer — Explore cryptocurrencies, view live prices, and learn about tokens in a simple, professional interface." />
-  <meta name="keywords" content="crypto, cryptocurrency, tokens, blockchain, explorer, MHA Explorer" />
-  <meta name="author" content="H" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Facebook -->
+  <!-- 🔸 SEO Optimization -->
+  <meta name="description" content="MHA Explorer — Edu Wallet: Live token prices, detailed token info, and blockchain exploration." />
+  <meta name="keywords" content="crypto, tokens, blockchain, BSC, Polygon, DeFi, ERC-20, ERC-721, wallet, smart contracts" />
+  <meta name="author" content="Hebish M" />
+  
+  <!-- 🔸 Open Graph / Social Media -->
   <meta property="og:title" content="MHA Explorer — Edu Wallet" />
-  <meta property="og:description" content="Explore cryptocurrencies, live prices, and token details in a simple, professional interface." />
+  <meta property="og:description" content="Explore live crypto token prices, view details, and interact with blockchain smart contracts." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mhaexplorer.github.io/mha-explorer-suite-/" />
-  <meta property="og:image" content="https://mhaexplorer.github.io/mha-explorer-suite-/assets/cover.png" />
+  <meta property="og:url" content="https://your-website-url.com" />
+  <meta property="og:image" content="https://your-website-url.com/preview-image.png" />
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MHA Explorer — Edu Wallet" />
-  <meta name="twitter:description" content="Explore cryptocurrencies, live prices, and token details in a simple, professional interface." />
-  <meta name="twitter:image" content="https://mhaexplorer.github.io/mha-explorer-suite-/assets/cover.png" />
-  <meta name="twitter:site" content="@7abisha1" />
-  <meta name="twitter:creator" content="@7abisha1" />
-
-  <!-- CSS & Icons -->
   <link rel="stylesheet" href="style.css" />
+  <!-- أيقونات Font Awesome للأزرار -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body>
+  <!-- 🔸 شريط الأسعار الحي -->
+  <div id="ticker">
+    <div id="tickerContent"></div>
+  </div>
+
+  <!-- 🔸 واجهة التطبيق -->
+  <div class="app">
+    <!-- اللوحة اليسرى -->
+    <div class="panel left">
+      <h1>MHA Explorer</h1>
+      <input id="search" placeholder="Search tokens..." />
+
+      <!-- قسم الأسعار الجانبي -->
+      <div id="prices">
+        <h3>Live Prices</h3>
+        <ul id="priceList"></ul>
+      </div>
+
+      <div id="tokenList"></div>
+    </div>
+
+    <!-- اللوحة اليمنى -->
+    <div class="panel right">
+      <h2>Token Details</h2>
+      <div id="detailLogo"></div>
+      <div id="detailName">—</div>
+      <div id="detailSymbol">—</div>
+      <div id="detailDesc">Select a token to see details</div>
+
+      <!-- الأزرار الاحترافية -->
+      <div class="detail-links">
+        <a id="detailWebsite" href="#" target="_blank" class="detail-btn hidden">
+          <i class="fa-solid fa-globe"></i> Website
+        </a>
+        <a id="detailExplorer" href="#" target="_blank" class="detail-btn hidden">
+          <i class="fa-solid fa-magnifying-glass"></i> Explorer
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
